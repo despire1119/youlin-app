@@ -1,0 +1,29 @@
+{
+  "name": "youlin-app",
+  "version": "0.0.1",
+  "description": "youlin",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/despire1119/youlin-app.git"
+  },
+  "keywords": [
+    "youlin"
+  ],
+  "author": "MrW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/despire1119/youlin-app/issues"
+  },
+  "homepage": "https://github.com/despire1119/youlin-app#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.22.0",
+    "lodash": "^4.16.4",
+    "webpack": "^1.13.2"
+  }
+}
