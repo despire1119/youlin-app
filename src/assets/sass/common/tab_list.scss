@@ -1,0 +1,27 @@
+@import 'base-color';
+@import '../lib/_function';
+
+.tab_list {
+	display:flex;
+	align-items: center;
+    justify-content: center;
+	border-bottom:0.5px solid $BondBorder;
+	padding: 0 cvt(20px);
+	>li {
+		flex:1;
+		text-align: center;
+		padding: cvt(18px) 0 ;
+		width: 100%;
+		line-height: cvt(30px);
+		color: $TextColor;
+		font-size: cvt(26px);
+		margin: 0 cvt(18px);
+	}
+	li.selected {
+		color: #cd6456;
+		font-size: cvt(26px);
+		border-bottom: 0.04rem solid #cd6456;
+		padding: cvt(20px) 0 cvt(16px);
+		margin: 0 cvt(18px);
+	}
+}

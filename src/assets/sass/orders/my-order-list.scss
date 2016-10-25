@@ -1,0 +1,145 @@
+@import '../common/common';
+@import '../common/tab_list';
+
+body {
+    background: #f1f1f1;
+    .management{
+    	border-top:0.5px solid #e2e2e0;
+    	border-bottom:0.5px solid #e2e2e0;
+        background: #fff;
+        padding: cvt(24px) cvt(46px);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: cvt(28px) 0;
+        .left{
+            flex:none;
+            img{
+                margin-top: cvt(1px);
+                width: cvt(76px);
+                height: cvt(76px);
+            }
+        }
+        .middle{
+            margin-left: cvt(26px);
+            flex:1;
+            .title{
+                font-size: cvt(28px);
+                color: #36363d;
+            }
+            .info{
+                margin-top: cvt(5px);
+                font-size: cvt(24px);
+                color: #747474;
+            }
+        }
+        .right{
+            flex:none;
+            img{
+                height: cvt(30px);
+            }
+        }
+
+    }
+    .list_module {
+    	border-top: 0.5px solid #e2e2e0;
+        background-color: #fff;
+        .main_list {
+            border-bottom: 0.5px solid #e2e2e0;
+            padding: 0 cvt(46px);
+            .list_wrap {
+                .one_list {
+                    border-bottom: 0.5px solid #e2e2e0;
+                    padding-top: cvt(38px);
+                    padding-bottom: cvt(30px);
+                    >dl {
+                        span {
+                            font-size: cvt(28px);
+                            color: $LightBorder;
+                        }
+                        >dt {
+                            display:flex;
+                            margin-bottom: cvt(14px);
+                            >h1 {
+                                flex:1;
+                                font-size: cvt(30px);
+                                color: $BondBorder;
+                                font-weight: normal;
+                                line-height: 1.2;
+                                >span{
+                                    display: block;
+                                    width: 100%;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                }
+                            }
+                            .price {
+                                flex:none;
+                                margin-left: cvt(14px);
+                                font-size: cvt(28px);
+                                color: $BondBorder;
+                            }
+                        }
+                        .btn{
+                            margin-top: cvt(38px);
+                            p{
+                                font-size: cvt(28px);
+                                padding: cvt(15px) cvt(20px);
+                                border: 0.5px solid #e2e2e0;
+                                border-radius: 3px;
+                                color: #747474;
+                                margin-left: cvt(20px);
+                            }
+                            span{
+                                font-size: cvt(28px);
+                                padding: cvt(15px) cvt(20px);
+                                background: $YouLinRed;
+                                color: #fff;
+                                border-radius: 3px;
+                                margin-left: cvt(20px);
+                            }
+                        }
+                        >dd {
+                            display:flex;
+                            line-height: cvt(28px);
+                            .time {
+                                flex:1;
+                                color: $BondBorder;
+                                font-size: cvt(28px);
+                            }
+                            .status {
+                                margin-left: cvt(34px);
+                                font-size: cvt(28px);
+                            }
+                            .orderColor{
+                                color:$TitleColor;
+                            }
+                            .evaluate{
+                                color:$TitleColor;
+                            }
+                        }
+                        &:last-child {
+                        	border: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+.pullUp {
+    display: none;
+    height: cvt(80px);
+    line-height: cvt(80px);
+    font-size: cvt(28px);
+    color: #494c53;
+    text-align: center;
+    .pullUpLabel {
+        display: block;
+        width: 100%;
+    }
+}

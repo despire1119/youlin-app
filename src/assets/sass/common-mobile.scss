@@ -1,0 +1,155 @@
+@import 'lib/lib';
+@import 'base/base';
+@import "common/base-color";
+@import 'components/button';
+
+* {
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body,
+html {
+    font-size: $baseFontSize;
+    backface-visibility: hidden;
+}
+body {
+    font-size: cvt(36px);
+    color: #333;
+    font-family: "Helvetica Neue", "PingFang SC", sans-serif;
+    background-color: #f5f6f8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    &:hover,
+    &:link,
+    &:visited {
+        color: #333;
+    }
+}
+del {
+    color: #999;
+}
+img,
+input {
+    vertical-align: middle;
+}
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+input[type='text'],
+input[type='password'],
+textarea{
+    user-select: text;
+    -webkit-user-select: text;
+}
+input[type='text'],
+input[type='password'],
+select,
+textarea {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    border: none;
+}
+select {
+    border: none;
+}
+ol{
+    padding-left: 1.5em;
+    li{
+        list-style: decimal;
+    }
+}
+.layout {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.with-bottom {
+    padding-bottom: cvt(146px);
+}
+.unscrollable {
+    overflow: hidden;
+    height: 100%;
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+}
+.clearfix {
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+        font-size: 0;
+        visibility: hidden;
+    }
+}
+[v-cloak] {
+    display: none;
+}
+.icon-heart {
+    color: #f35059;
+}
+.icon-checked {
+    color: #e1ba74;
+}
+.subtext {
+    color: #ababab;
+}
+.rtl {
+    text-align: right !important;
+}
+// 底部操作按钮
+.with-operate {
+    padding-bottom: cvt(72px);
+}
+.with-top {
+    padding-top: cvt(132px);
+}
+.operate-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: cvt(36px);
+    background-color: #f5f6f8;
+}
+// select
+.select-wrap {
+    position: relative;
+    // height: cvt(108px);
+    select {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: cvt(108px);
+        opacity: 0;
+    }
+}
+.block{
+	background-color: #fff;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	margin: cvt(36px) 0;
+	padding: 0 cvt(36px);
+}
+.gray{
+	color: #ababab;
+}
+.brown{
+	color: #caa86c;
+}

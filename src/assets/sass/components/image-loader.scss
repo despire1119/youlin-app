@@ -1,0 +1,36 @@
+@import "../lib/_function";
+@import "../common/base-color";
+
+.image-loader{
+	position: absolute;
+	z-index: 9;
+	top: 50%;
+	left: 50%;
+	margin-left: cvt(-40px);
+	margin-top: cvt(-30px);
+	height: cvt(60px);
+	width: cvt(80px);
+	display: flex;
+}
+.image-loader:before,
+.image-loader:after,
+.image-loader span {
+	flex: 1;
+  	content: '';
+  	display: block;
+  	left: 0px;
+  	top: 0;
+  	width: cvt(20px);
+  	height: cvt(60px);
+  	background-color: #ddd;
+  	animation: pulse 1s linear infinite;
+}
+.image-loader:after {
+  	left: 15px;
+  	animation-delay: -0.66s;
+}
+.image-loader span {
+  	left: 30px;
+  	animation-delay: -0.33s;
+	margin: 0 cvt(10px);
+}

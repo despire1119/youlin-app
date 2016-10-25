@@ -1,0 +1,11 @@
+{
+    "myOrderList.html": {
+      "template": "src/template/default.html",
+      "title": "订单管理",
+      "entry": "orders/myOrderList.js",
+      "chunks": [
+        "lib",
+        "myOrderList"
+      ]
+    }
+}

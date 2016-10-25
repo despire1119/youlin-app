@@ -1,0 +1,218 @@
+@import 'base-color';
+@import '../common/base';
+@import '../lib/_function';
+
+*{
+    margin:0px;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    50% {
+        -webkit-transform: scale(1.5)
+    }
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+
+.highlight{
+    color: $YouLinRed !important;
+}
+
+.loading-mask {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    ul.loading {
+        height: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        z-index: 999;
+        position: absolute;
+        top: 49%;
+        left: 35%;
+        > li {
+            float: left;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background: rgba(205, 100, 86, 0.8);
+            &.bigger {
+                -webkit-animation: loading .25s linear infinite;
+                background: rgba(205, 100, 86, 1);
+            }
+        }
+    }
+}
+
+
+/*自定义弹框*/
+
+#alertWrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#customAlert {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    position: fixed;
+    left: 5%;
+    top: 30%;
+}
+
+#customAlert h1 {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+#customAlert h3 {
+    font-size: 14px;
+    color: #a4a4a4;
+    width: 100%;
+    word-break: break-all;
+    text-align: center;
+    padding: 10px 25px
+}
+
+#customAlert p {
+    height: 48px;
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+
+#customAlert p a {
+    float: left;
+    display: block;
+    width: 49%;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    color: #494c53;
+    text-decoration: none;
+}
+
+#customAlert a.rightBorder {
+    border-right: 1px solid #eee;
+}
+
+
+/*客户端外打开出现header和footer*/
+
+#download {
+    width: 100%;
+    height: 80px;
+    padding: 0 15px 0 9px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    /* display: box; display: -moz-box; display: -webkit-box; -webkit-box-pack:justify; -moz-box-pack:justify; */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#download.show {
+    /*-webkit-animation: show 0.2s ease-in-out forwards;*/
+    display: block;
+}
+
+#download.hide {
+    /*-webkit-animation: hide 0.2s ease-in-out forwards;*/
+    display: none;
+}
+
+#download img#dele {
+    /*width: 12px; height:12px; -webkit-border-radius:50%; background: #b2b2b2; display: inline-block; float: left; margin-top: 34px;*/
+    margin-top: 33px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    float: left;
+}
+
+
+/*#download i:before,#download i:after { width: 1px; height:8px; background: #fff; content: ''; margin-top: 2px; margin-left: 5px; display: inline-block; -webkit-transform:rotate(-45deg); }
+#download i:after { -webkit-transform:rotate(45deg); margin-left: -1px; }*/
+
+#download a {
+    display: inline-block;
+    margin-top: 25px;
+    width: 64px;
+    height: 30px;
+    line-height: 30px;
+    background: #cb6559;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
+    float: right;
+}
+
+
+/*#download div p {font-size: 12px; color:#a3a3a3;}
+#download div h3 {font-size: 14px; color:#494c53;}
+#download div img {width:48px; margin: 5px 0 4px 0; }
+#download div {display: inline-block; float: left; margin-top: 16px;}*/
+
+#download img.logo {
+    float: left;
+    width: 200px;
+    max-width: 200px;
+}
+
+#foot {
+    padding: 0rem 0.2rem 1.4rem;
+}
+
+#foot #joinBtn {
+    border: 1px solid #cd6456;
+    color: #cd6456;
+    width: 100%;
+    line-height: 0.8rem;
+    background-color: #fff;
+    font-size: 0.32rem;
+    text-decoration: none;
+    border: 1px solid #cd6456;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}

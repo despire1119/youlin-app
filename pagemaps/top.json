@@ -1,0 +1,11 @@
+{
+  "list.html": {
+    "template": "src/template/default.html",
+    "title": "有邻",
+    "entry": "list.js",
+    "chunks": [
+      "lib",
+      "list"
+    ]
+  }
+}

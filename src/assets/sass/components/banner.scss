@@ -1,0 +1,16 @@
+@import "../lib/_function";
+@import "../common/base-color";
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: cvt(29px);
+    height: cvt(69px);
+    background-color: $YouLinRed;
+    opacity: .7;
+}
+.cli{
+    background: $BondBorder;
+}

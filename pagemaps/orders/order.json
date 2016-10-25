@@ -1,0 +1,11 @@
+{
+    "index.html": {
+      "template": "src/template/default.html",
+      "title": "index",
+      "entry": "index.js",
+      "chunks": [
+        "lib",
+        "index"
+      ]
+    }
+}

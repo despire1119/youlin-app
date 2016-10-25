@@ -1,0 +1,80 @@
+@import '../common-mobile';
+
+.detail{
+    margin-top: cvt(18px);
+    padding: cvt(46px);
+    background-image: url('http://cdn.youlin.cn/image/wap/ordersbg_event_checkstand@2x.png?imageMogr2/thumbnail/!70p');
+    background-size: 100% 100%;
+    .pri{
+        width: cvt(220px);
+        padding-bottom: cvt(26px);
+        border-bottom: 1px solid #dedede;
+        margin:auto;
+        font-size: cvt(48px);
+        color:$YouLinRed;
+        text-align: center;
+    }
+    .tips{
+        font-size: cvt(24px);
+        line-height: cvt(32px);
+        margin-top: cvt(32px);
+        text-align: center;
+    }
+}
+.pay-area{
+    background-color: #fff;
+    margin-top: cvt(30px);
+    border-top: 1px solid $LightBorder;
+    .pay-tit{
+        display: block;
+        font-size: cvt(26px);
+        padding: cvt(23px) cvt(46px);
+        border-bottom: 1px solid $LightBorder;
+    }
+    .pay-methods{
+        li{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: cvt(28px) cvt(46px);
+            border-bottom: 1px solid $LightBorder;
+            .img-left{
+                float: left;
+                width: cvt(60px);
+                height: cvt(60px);
+            }
+            .contain{
+                margin-left: cvt(38px);
+                .tit{
+                    position: relative;
+                    margin-bottom: cvt(12px);
+                    font-size: cvt(28px);
+                    color: #000;
+                    i{
+                        position: absolute;
+                        display: none;
+                    }
+                }
+                .pay-tip{
+                    font-size: cvt(24px);
+                    color: $TextColor;
+                }
+            }
+            i{
+                position: absolute;
+                right: cvt(46px);
+                display: inline-block;
+                width: cvt(38px);
+                height: cvt(38px);
+                border: 1px solid $LightBorder;
+                border-radius: cvt(38px);
+            }
+            .chosen{
+                background-color: $YouLinRed;
+            }
+        }
+    }
+}
+.handle{
+    margin: cvt(28px) cvt(30px);
+}

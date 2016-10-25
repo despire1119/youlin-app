@@ -1,0 +1,11 @@
+{
+    "orders/orderPay.html": {
+      "template": "src/template/default.html",
+      "title": "收银台",
+      "entry": "orders/orderPay.js",
+      "chunks": [
+        "lib",
+        "orderPay"
+      ]
+    }
+}
